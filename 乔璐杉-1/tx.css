@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+/* 轮播图 */
+.lunbo {
+    position: relative;
+    height: 720px;
+    width: 1473px;
+}
+
+
+.lunbo img {
+    width: 1473px;
+    height: 720px;
+    
+}
+
+.lunbo ul {
+    width: 500%;
+    position: absolute;
+}
+
+.lunbo ul li {
+    float: left;
+}
+
+.win-circle {
+    height: 25px;
+    width: 200px;
+    list-style-type: none;
+    position: absolute;
+    z-index: 0;
+    bottom: 20%;
+    right: 5%;
+    margin-right: 1em;
+    font-size: 35px;
+}
+
+.win-circle li {
+    float: left;
+    list-style-type: square;
+    width: 1em;
+    height: 20px;
+    margin: 0 1px;
+    position: relative;
+    color: #fff;
+}
+
+.win-circle .current {
+    color: #0052D9;
+}
+
+
+
+/* 左上角logo */
+.win-nav .win-logo {
+    width: 168px;
+    position: absolute;
+    left: 9%;
+    top: 25px;
+}
+/* 导航栏中间 */
+.win-list {
+    right: 240px;
+    top: 10px;
+    position: absolute;
+    list-style: none;
+}
+.win-list .win-lang {
+    position: absolute;
+    right: -20%;
+    top: 13px;
+    float: right;
+}
+
+.win-list .win-lang a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-family: "PingFangSC-Regular";
+    text-decoration: none;
+    opacity: 1;
+}
+i {
+    color: #0053d93f;
+}
+
+/* 下拉菜单 */
+.win-list li{
+    display: inline-block;
+    position: relative;
+    /* 使得下拉菜单相对于此元素定位 */
+    width: 100px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.win-list li a {
+    line-height: 50px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    color: #e1dfdf;
+}
+
+.win-list li ul {
+    position: absolute;
+    /* 将下拉菜单放在其父元素的下方 */
+    width: 150%;
+    right: -5px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.win-list li ul li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+    transform: translateY(-10px);
+}
+
+.win-list li:hover ul {
+    display: block;
+}
+
+.win-list li:hover ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
