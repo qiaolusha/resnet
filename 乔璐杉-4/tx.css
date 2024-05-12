@@ -1,0 +1,557 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+/* 轮播图 */
+.lunbo {
+    position: relative;
+    height: 720px;
+    width: 1473px;
+    overflow: hidden;
+}
+
+
+.lunbo img {
+    width: 1473px;
+    height: 720px;
+}
+
+.lunbo ul {
+    width: 500%;
+    position: absolute;
+}
+
+.lunbo ul li {
+    float: left;
+}
+
+.win-circle {
+    height: 25px;
+    width: 200px;
+    list-style-type: none;
+    position: absolute;
+    z-index: 0;
+    bottom: 20%;
+    right: 5%;
+    margin-right: 1em;
+    font-size: 35px;
+}
+
+.win-circle li {
+    float: left;
+    list-style-type: square;
+    width: 1em;
+    height: 20px;
+    margin: 0 1px;
+    position: relative;
+    color: #fff;
+}
+
+.win-circle .current {
+    color: #0052D9;
+}
+
+/* 轮播小箭头 */
+.win_arrow_r {
+    position: absolute;
+    font-size: 50px;
+    left: 15%;
+    bottom: 14.5%;
+    color: #fff;
+}
+
+.win_arrow_l {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    left: 8%;
+    bottom: 14.5%;
+}
+
+
+/* 轮播2 */
+.lunboo {
+    position: relative;
+    height: 720px;
+    width: 1470px;
+    overflow: hidden;
+}
+
+
+.lunboo img {
+    width: 1470px;
+    height: 720px;
+}
+
+.lunboo ul {
+    width: 500%;
+    position: absolute;
+}
+
+.lunboo ul li {
+    float: left;
+}
+
+.win-circlee {
+    height: 25px;
+    width: 200px;
+    list-style-type: none;
+    position: absolute;
+    z-index: 0;
+    bottom: 4%;
+    right: 0;
+    margin-right: 1em;
+    font-size: 35px;
+}
+
+.win-circlee li {
+    float: left;
+    list-style-type: square;
+    width: 1em;
+    height: 20px;
+    margin: 0 1px;
+    position: relative;
+    color: #fff;
+}
+
+.win-circlee .current {
+    color: #0052D9;
+}
+
+
+/* 左上角logo */
+.win-nav .win-logo {
+    width: 168px;
+    position: absolute;
+    left: 9%;
+    top: 25px;
+}
+
+/* 导航栏中间 */
+.win-list {
+    right: 240px;
+    top: 10px;
+    position: absolute;
+    list-style: none;
+}
+
+.win-list .win-lang {
+    position: absolute;
+    right: -20%;
+    top: 13px;
+    float: right;
+}
+
+.win-list .win-lang a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-family: "PingFangSC-Regular";
+    text-decoration: none;
+    opacity: 1;
+}
+
+i {
+    color: #0053d93f;
+}
+
+/* 下拉菜单 */
+.win-list .win-white {
+    display: none;
+    background-color: #fff;
+    width: 1488px;
+    position: absolute;
+    height: 500px;
+    top: -50px;
+    left: -505px;
+    overflow: hidden;
+}
+
+.win-list:hover .win-white {
+    display: block;
+}
+
+
+
+.win-list li {
+    display: inline-block;
+    position: relative;
+    /* 使得下拉菜单相对于此元素定位 */
+    width: 100px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.win-list li a {
+    line-height: 50px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    color: #e1dfdf;
+}
+
+.win-nav:hover .win-list a h3,
+.win-nav:hover .win-lang a {
+    color: #000;
+}
+
+.win-list .win-white img {
+    width: 168px;
+    height: 23px;
+    padding: 33px 0 0 131px;
+}
+
+.win-list li ul {
+    position: absolute;
+    /* 将下拉菜单放在其父元素的下方 */
+    width: 150%;
+    right: -5px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.win-list li ul li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+    transform: translateY(-10px);
+}
+
+.win-list li:hover ul {
+    display: block;
+}
+
+.win-list li:hover ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 最新动态 */
+.win-yidong {
+    display: inline-block;
+    position: relative;
+    height: 556px;
+    margin-bottom: 30px;
+}
+
+.win-yidong1,
+.win-yidong2 {
+    display: inline-block;
+    width: 384px;
+    height: 555px;
+    margin-bottom: 30px;
+
+}
+
+.win-yidong1 {
+    margin-right: 18px;
+}
+
+.win-yidong:hover,
+.win-yidong1:hover,
+.win-yidong2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: relative;
+    top: -10px;
+
+}
+
+.win-shu {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.win-shu hr {
+    background-color: rgb(255, 255, 255);
+    width: 1225px;
+    height: 2px;
+    border: none;
+    position: absolute;
+    top: -70px;
+    left: 5px;
+}
+
+.win-shu h4 {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    left: 20px;
+    top: -60px;
+
+}
+
+.win-shu .win-shu-zuo {
+    display: inline-block;
+    width: 66%;
+    margin-right: 0px;
+}
+
+.win-shu .win-shu-you {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 32%;
+}
+
+.win-shu span {
+    display: block;
+    border: 0.5px solid;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    transform: skewX(-15deg);
+    padding: 5px;
+}
+
+.win-b {
+    background-color: #fff;
+    display: inline-block;
+    height: 240px;
+    position: absolute;
+    top: 315px;
+    width: 792px;
+}
+
+.win-d {
+    display: inline-block;
+    background-color: rgb(0, 169, 206);
+    height: 300px;
+}
+
+.win-d a,
+.win-d span {
+    color: #fff;
+}
+
+.win-b a {
+    color: #000;
+}
+
+.win-e {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.win-f {
+    width: 100%;
+    height: 305px;
+    display: inline-block;
+    background-color: #0052D9;
+}
+
+.win-f a,
+.win-f span {
+    color: #fff;
+}
+
+.win-g {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.win-h {
+    width: 100%;
+    display: inline-block;
+    height: 300px;
+}
+
+.win-i {
+    width: 100%;
+    height: 246px;
+}
+
+.win-j {
+    display: inline-block;
+    background-color: #ccc;
+    height: 313px;
+
+}
+
+
+.win-l {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: #fff;
+    width: 768px;
+}
+
+
+.win-n {
+    height: 300px;
+    background-color: #0052D9;
+}
+
+.win-n span,
+.win-n a {
+    color: #fff;
+}
+
+.win-shu h3,
+.win-shu p {
+    height: 80px;
+    line-height: 50px;
+    margin: 0 20px;
+}
+
+
+
+.win-shu .win-shu-zuo div div,
+.win-shu .win-shu-you div div {
+    overflow: hidden;
+}
+
+.win-shu .win-shu-zuo div img,
+.win-shu .win-shu-you div img {
+    transition: transform .4s ease-in-out;
+}
+
+.win-shu .win-shu-zuo div:hover img,
+.win-shu .win-shu-you div:hover img {
+    transform: scale(1.1);
+}
+
+/* 公司简介 */
+.win-heng-a {
+    width: 1200px;
+    text-align: center;
+    margin: 70px 0px 50px 130px;
+}
+
+.win-heng-a a {
+    position: relative;
+    width: 31.3%;
+    display: inline-block;
+    margin-left: 21px;
+    overflow: hidden;
+}
+
+.win-heng-a a div {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 230px;
+}
+
+.win-heng-a a img {
+    transition: transform .4s ease-in-out;
+}
+
+.win-heng-a a:hover img {
+    transform: scale(1.1);
+}
+
+.win-heng-a a:hover div {
+    background: rgba(27, 35, 255, 0.488);
+}
+
+/* 第二个轮播 */
+.win-lianjie1 {
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+
+.win-lianjie1 h2 {
+    line-height: 40px;
+}
+
+.win-lianjie1 h2:hover {
+    color: #0052D9;
+}
+
+.win-lianjie1 h5 {
+    line-height: 30px;
+    color: #0000009d;
+}
+
+/* 尾部 */
+.win-footer-a {
+    color: #5E6464;
+    margin-left: 60px;
+}
+
+.win-footer-a ul li {
+    display: inline-block;
+    margin: 50px 30px 0 0;
+    height: 70px;
+}
+
+.win-footer-a ul li img {
+    width: 30px;
+}
+
+.win-footer-b {
+    display: inline-block;
+    height: 200px;
+
+}
+
+.win-footer-b div {
+    position: relative;
+    width: 160px;
+    display: inline-block;
+    margin-left: 60px;
+    color: #5E6464;
+}
+
+.win-footer-b h3 {
+    height: 50px;
+    color: #5E6464;
+}
+
+.win-footer-b ul li {
+    height: 30px;
+}
+
+.win-logo2 {
+    position: absolute;
+    left: 45%;
+    bottom: 40%;
+}
+.win-footer-c ul li {
+    color: #5E6464;
+    display: inline-block;
+    margin-right: 15px;
+}
+.win-footer-c  {
+    margin: 30px 60px;
+}
+.win-footer-c p {
+    color: #5E6464;
+    margin-top: 20px;
+}
